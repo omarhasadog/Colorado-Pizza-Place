@@ -48,7 +48,7 @@ public class PizzaServer {
             send(exchange, 405, "Method Not Allowed", "text/plain");
             return;
         }
-        Path file = Path.of("src", "web", name);
+        Path file = Path.of(name);
 
         if (!Files.exists(file)) {
             send(exchange, 404, "Not Found", "text/plain");
