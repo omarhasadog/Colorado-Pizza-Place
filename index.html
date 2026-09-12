@@ -95,10 +95,22 @@
             <p>Delivery Fee: $<span id="deliveryFee">0.00</span></p>
             <h3>Total: $<span id="total">0.00</span></h3>
         </div>
-        <button class="primary" onclick="placeOrder()">Place Order</button>
-        <p id="orderMessage" class="message"></p>
+       <!-- Bot Protection -->
+<div
+    class="cf-turnstile"
+    data-sitekey="1x00000000000000000000AA">
+</div>
+
+<button class="primary" onclick="placeOrder()">Place Order</button>
+<p id="orderMessage" class="message"></p>
+
     </div>
 </div>
+    <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    async
+    defer>
+</script>
 <script src="app.js"></script>
 </body>
 </html>
